@@ -1,66 +1,264 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Swim Out</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-		<style type="text/css">
-			#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:500px;}
-		</style>
-	</head>
-	<body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Lozange Lab">
+    <title>Swim Out</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Swim Out</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#trailer" onclick=$("#menu-close").click();>Trailer</a>
+            </li>
+            <li>
+                <a href="#screenshots" onclick=$("#menu-close").click();>Screenshots</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Swim Out</h1>
+            <!--<h3>Currently on Steam Greenlight !</h3>-->
+            <br>
+            <a href="#" class="btn btn-lg btn-light">Vote for us on Steam Greenlight</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#about" class="btn btn-dark btn-lg">More Info</a>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Go out of the pool without touching other swimmers !</h2>
+                    <p class="lead">Swim Out is a strategic, turn-by-turn puzzle game where you control a swimmer who want to go out of a pool, a river or the sea.</p>
+                    <p class="lead">Available mid 2017 on Windows, Mac, Linux, iOS, Android and Windows Phone</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-		<!-- Header -->
-		<header id="header">
-			<h1>Swim Out</h1>
-			<p>soon...</p>
-		</header>
+    <!-- Trailer -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="trailer" class="services bg-primary">
+        <div class="container">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/Nwwwl5B_fX0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- /.container -->
+    </section>
+    
+    <!-- Screenshots -->
+    <section id="screenshots" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Screenshots</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/screen-1.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/screen-2.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/screen-3.gif">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/screen-4.gif">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-		<!-- Begin MailChimp Signup Form -->			
-		<div id="mc_embed_signup">
-			<form action="//lozange-lab.us3.list-manage.com/subscribe/post?u=af22813bf2a4cfaa08603ea09&amp;id=0d41753d2c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div id="mc_embed_signup_scroll">				
-					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_af22813bf2a4cfaa08603ea09_0d41753d2c" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				</div>
-			</form>
-		</div>
-		<!--End mc_embed_signup-->
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Vote for us on Steam Greenlight !</h1>
+            <a href="#" class="btn btn-lg btn-light">Vote for us!</a>
+        </div>
+    </aside>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://twitter.com/lozange_lab" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="http://fb.me/swimoutgame" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="mailto:info@swim-out.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; 2017 <a href="http://www.lozange-lab.com">Lozange Lab</a></li>
-				<li>Website template by <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</footer>
+    <!-- Call to Action -->
+    <!-- <aside class="call-to-action bg-primary"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+    <!-- <div class="col-lg-12 text-center"> -->
+    <!-- <h3>The buttons below are impossible to resist.</h3> -->
+    <!-- <a href="#" class="btn btn-lg btn-light">Click Me!</a> -->
+    <!-- <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </aside> -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Made with love by Lozange Lab</strong></h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">Email</a></li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/swimoutgame"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/lozange_lab"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <!--<li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>-->
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Lozange Lab 2017   -   <a href="legal.html">Legal mentions</a></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e)
+        {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e)
+        {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Scrolls to the selected menu item on the page
+        $(function()
+        {
+            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function()
+            {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname)
+                {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length)
+                    {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        //#to-top button appears after scrolling
+        var fixed = false;
+        $(document).scroll(function()
+        {
+            if ($(this).scrollTop() > 250)
+            {
+                if (!fixed)
+                {
+                    fixed = true;
+                    // $('#to-top').css({position:'fixed', display:'block'});
+                    $('#to-top').show("slow", function()
+                    {
+                        $('#to-top').css({
+                            position: 'fixed',
+                            display: 'block'
+                        });
+                    });
+                }
+            } else
+            {
+                if (fixed)
+                {
+                    fixed = false;
+                    $('#to-top').hide("slow", function()
+                    {
+                        $('#to-top').css({
+                            display: 'none'
+                        });
+                    });
+                }
+            }
+        });
 
-		<!-- Scripts -->
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="assets/js/main.js"></script>
-		
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m)
+        {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function()
+        {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-45862818-3', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-45862818-3', 'auto');
+        ga('send', 'pageview');
 
-</script>
-
-	</body>
+    </script>
+</body>
 </html>
