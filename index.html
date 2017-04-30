@@ -109,32 +109,32 @@
                     <div class="row">
 						<div class="col-md-6">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/Swim Out - level I-4.jpg">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/Swim Out - level I-4.jpg">
                             </div>
                         </div>      
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/Swim Out - level I-9.jpg">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/Swim Out - level I-9.jpg">
                             </div>
                         </div>                       
 						<div class="col-md-6">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/Swim Out - sea.jpg">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/Swim Out - sea.jpg">
                             </div>
                         </div>
 						<div class="col-md-6">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/Swim Out - level I-5.jpg">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/Swim Out - level I-5.jpg">
                             </div>
                         </div>
 						<div class="col-md-6">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/Swim Out - level I-13.jpg">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/Swim Out - level I-13.jpg">
                             </div>
                         </div>
 						<div class="col-md-6">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/Swim Out - level I-10.jpg">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/Swim Out - level I-10.jpg">
                             </div>
                         </div>						
                     </div>
@@ -152,14 +152,14 @@
                     <div class="row">
 						<div class="">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/ball-450-optim.gif">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/ball-450-optim.gif">
                             </div>
                         </div>
 					</div>                
                     <div class="row">
                         <div class="">
                             <div class="portfolio-item">
-                                <img class="img-portfolio img-responsive" src="img/level-8-450-optim.gif">
+                                <img class="img-portfolio img-responsive lazy" data-original="img/level-8-450-optim.gif">
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,18 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.lazyload.min.js"></script>
     <script>
+		// lazy loading
+		$(function() {
+			$("img.lazy").lazyload();
+		});
+		
+		$("img.lazy").lazyload({
+			threshold : 200,
+			effect : "fadeIn"
+		});
+
         // Closes the sidebar menu
         $("#menu-close").click(function(e)
         {
