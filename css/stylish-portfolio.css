@@ -5,17 +5,16 @@
  */
 
 #mailchimp {
-    //background: #f8f8f8;
     color: #3D6392;
     padding: 20px 15px;
 }
 
     #mailchimp input {
         border: medium none;
-        //color: gray;
-        //font-family: times new roman;
-        //font-size: 16px;
-        //font-style: italic;
+        /*color: gray;
+        font-family: times new roman;
+        font-size: 16px;
+        font-style: italic;*/
         margin-bottom: 10px;
         padding: 8px 10px;
         width: 300px;
@@ -28,7 +27,7 @@
             background: #fff
         }
 
-        /*#mailchimp input[type="submit"] {
+/*#mailchimp input[type="submit"] {
             background: #115B87;
             color: #fff;
             cursor: pointer;
@@ -41,12 +40,12 @@
                 color: #F2C94C
             }*/
 
-/* Global Styles */
-
 html,
 body {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -65,8 +64,6 @@ body {
         font-size: 4.5em;
         font-weight: 700;
     }
-
-/* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
@@ -94,13 +91,9 @@ body {
         background-color: rgba(255,255,255,0.8);
     }
 
-/* Custom Horizontal Rule */
-
 hr.small {
     max-width: 100px;
 }
-
-/* Side Menu */
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -185,27 +178,44 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-
-.header {
-    display: table;
+#header {
+    background-image: url(../img/title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     width: 100%;
-    height: 100%;
-    background: url(../img/title.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    padding-bottom: 50%;
 }
 
-/* About */
+#header-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: absolute;
+    width: 55%;
+    padding-left: 2%;
+    padding-top: 20%;
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+}
+
+    #header-content p {
+        margin-bottom: 1.5em
+    }
 
 .about {
     padding: 50px 0;
 }
-
-/* Services */
 
 .services {
     padding: 50px 0;
@@ -215,9 +225,7 @@ hr.small {
     margin-bottom: 30px;
 }
 
-/* Callout */
-
-.callout {
+/*.callout {
     display: table;
     width: 100%;
     height: 400px;
@@ -227,9 +235,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-/* Portfolio */
+}*/
 
 .portfolio {
     padding: 50px 0;
@@ -243,11 +249,9 @@ hr.small {
     margin: 0 auto;
 }
 
-    /* .img-portfolio:hover {
+/* .img-portfolio:hover {
         opacity: 0.8;
     } */
-
-/* Call to Action */
 
 .call-to-action {
     padding: 50px 0;
@@ -256,8 +260,6 @@ hr.small {
     .call-to-action .btn {
         margin: 10px;
     }
-
-/* Map */
 
 .map {
     height: 500px;
@@ -272,8 +274,6 @@ hr.small {
 .map iframe {
     pointer-events: none;
 }
-
-/* Footer */
 
 footer {
     padding: 100px 0;
